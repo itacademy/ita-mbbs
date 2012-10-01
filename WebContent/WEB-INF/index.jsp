@@ -49,7 +49,7 @@ fieldset p.action input[type="submit"] {
 <p class="error"><c:out value="${error}" /></p>
 </c:if>
 
-<form id="signup-form" action="${pageContext.request.contextPath}/mbbs/signup" method="POST">
+<form id="signup-form" action="${pageContext.request.contextPath}/signup" method="POST">
   <fieldset>
     <legend>新規登録</legend>
     <p><span class="param-name">ハンドル名</span><input type="text" name="handle"></p>
@@ -59,7 +59,7 @@ fieldset p.action input[type="submit"] {
   </fieldset>
 </form>
 
-<form id="login-form" action="${pageContext.request.contextPath}/mbbs/login" method="POST">
+<form id="login-form" action="${pageContext.request.contextPath}/login" method="POST">
   <fieldset>
     <legend>すでにアカウントをおもちの方</legend>
     <p><span class="param-name">アカウント</span><input type="text" name="account"></p>

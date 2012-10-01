@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-@WebServlet("/mbbs/login")
+@WebServlet("/login")
 public class LoginServlet extends BaseServlet {
 
     @SuppressWarnings("unchecked")
@@ -39,6 +39,6 @@ public class LoginServlet extends BaseServlet {
 
         HttpSession session = req.getSession();
         session.setAttribute("user", user);
-        seeOther("/mbbs/board", req, res);
+        seeOther("/board", req, res);
     }
 }

@@ -1,5 +1,6 @@
 package jp.itacademy.samples.web.mbbs;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 
@@ -16,6 +17,7 @@ public class Initializer implements ServletContextListener {
         ServletContext ctx = e.getServletContext();
         ctx.removeAttribute("userMap");
         ctx.removeAttribute("handleSet");
+        ctx.removeAttribute("messages");
     }
 
     @Override
@@ -23,6 +25,7 @@ public class Initializer implements ServletContextListener {
         ServletContext ctx = e.getServletContext();
         ctx.setAttribute("userMap", new HashMap<>());
         ctx.setAttribute("handleSet", new HashSet<>());
+        ctx.setAttribute("messages", new ArrayList<>());
     }
 
 }

@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-@WebServlet("/mbbs/signup")
+@WebServlet("/signup")
 public class SignupServlet extends BaseServlet {
 
     @Override
@@ -34,7 +34,7 @@ public class SignupServlet extends BaseServlet {
         if (error == null) {
             HttpSession session = req.getSession();
             session.setAttribute("user", user);
-            seeOther("/mbbs/board", req, res);
+            seeOther("/board", req, res);
         } else {
             req.setAttribute("error", error);
             forward("/WEB-INF/index.jsp", req, res);

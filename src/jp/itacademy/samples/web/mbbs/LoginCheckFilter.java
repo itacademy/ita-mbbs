@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-@WebFilter(filterName = "mbbs-login-check", urlPatterns = "/mbbs/board")
+@WebFilter(filterName = "mbbs-login-check", urlPatterns = { "/board", "/post" })
 public class LoginCheckFilter implements Filter {
 
     public void init(FilterConfig conf) throws ServletException {
@@ -28,7 +28,7 @@ public class LoginCheckFilter implements Filter {
         HttpServletRequest hreq = (HttpServletRequest) req;
         HttpServletResponse hres = (HttpServletResponse) res;
 
-        String loginUrl = hreq.getContextPath() + "/mbbs/index";
+        String loginUrl = hreq.getContextPath() + "/index";
         HttpSession session = hreq.getSession(false);
         if (session == null) {
             hres.sendRedirect(loginUrl);

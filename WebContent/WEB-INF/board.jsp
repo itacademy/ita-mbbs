@@ -49,7 +49,7 @@ form p {
 </c:forEach>
 </c:if>
 
-<form action="${pageContext.request.contextPath}/mbbs/board" method="POST">
+<form action="${pageContext.request.contextPath}/post" method="POST">
   <p><textarea name="body" rows="5" cols="50"></textarea></p>
   <p><input type="submit" value="投稿"></p>
 </form>

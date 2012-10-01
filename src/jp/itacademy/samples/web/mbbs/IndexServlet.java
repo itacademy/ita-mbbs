@@ -7,7 +7,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/mbbs/index")
+@WebServlet("/index")
 public class IndexServlet extends BaseServlet {
 
     @Override
