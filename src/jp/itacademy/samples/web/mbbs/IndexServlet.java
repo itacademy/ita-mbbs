@@ -7,6 +7,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import jp.itacademy.samples.web.BaseServlet;
+
 @WebServlet("/index")
 public class IndexServlet extends BaseServlet {
 

@@ -11,6 +11,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import jp.itacademy.samples.web.BaseServlet;
+
 @WebServlet("/signup")
 public class SignupServlet extends BaseServlet {
 

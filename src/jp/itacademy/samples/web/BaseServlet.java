@@ -1,4 +1,4 @@
-package jp.itacademy.samples.web.mbbs;
+package jp.itacademy.samples.web;
 
 import java.io.IOException;
 
